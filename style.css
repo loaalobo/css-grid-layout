@@ -12,46 +12,33 @@ body { /*trabalhando com layout de 4 colunas*/
 
 /*determina em que "lacuna" cada elemento deve ficar*/
 /*o nome "grid-area" deve ser o mesmo do "grid-template-areas"*/
+/*seta o estilo de cada elemento*/
 .o-header {
     grid-area: header;
-}
-  
-.o-aside {
-    grid-area: aside;
-}
-  
-.o-main {
-    grid-area: main;
-}
-  
-.o-footer {
-    grid-area: footer;
-}
-
-
-/*seta o estilo de cada elemento*/
-.o-header{
     background: #e7fc8b;
     color:black;
     font-family: fantasy;
     text-align: center;
-} 
-
-.o-aside{
+}
+  
+.o-aside {
+    grid-area: aside;
     background: #fcaf8b;
     color:black;
     font-family: fantasy;
     text-align: center;
 }
-
-.o-main{
+  
+.o-main {
+    grid-area: main;
     background: #8bf8fc;
     color:black;
     font-family: fantasy;
     text-align: center;
 }
-
+  
 .o-footer {
+    grid-area: footer;
     background: #fc8bc9;
     color:black;
     font-family: fantasy;
