@@ -1,0 +1,60 @@
+body { /*trabalhando com layout de 4 colunas*/
+    display: grid;
+    grid-template-areas: /*posiciona as tags*/
+    "header header header header" /*define que a 1ª linha será composta por um header*/
+    "main main main aside" /*define que a 2ª linha será composta por um aside na direita e um main na esquerda*/
+    "footer footer footer footer"; /*define que a 3ª linha será composta por um footer*/
+    grid-gap: 0.5rem; /*adiciona espaço entre os elementos*/
+    grid-template-columns: auto auto auto; /*define o tamanho dos elementos*/
+    grid-template-rows: auto 100vh auto; /*define o tamanho dos elementos*/
+}
+
+
+/*determina em que "lacuna" cada elemento deve ficar*/
+/*o nome "grid-area" deve ser o mesmo do "grid-template-areas"*/
+.o-header {
+    grid-area: header;
+}
+  
+.o-aside {
+    grid-area: aside;
+}
+  
+.o-main {
+    grid-area: main;
+}
+  
+.o-footer {
+    grid-area: footer;
+}
+
+
+/*seta o estilo de cada elemento*/
+.o-header{
+    background: #e7fc8b;
+    color:black;
+    font-family: fantasy;
+    text-align: center;
+} 
+
+.o-aside{
+    background: #fcaf8b;
+    color:black;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.o-main{
+    background: #8bf8fc;
+    color:black;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.o-footer {
+    background: #fc8bc9;
+    color:black;
+    font-family: fantasy;
+    text-align: center;
+}
+
